@@ -4,6 +4,8 @@ services:
   app:
     build: .
     container_name: simulator
+    env_file:
+      - .env
     volumes:
       - .:/go/src/
     extra_hosts:
